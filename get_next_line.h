@@ -34,6 +34,6 @@ char	*ft_memccpy(char *dst, const char *src, int c);
 
 void	ft_memmove(char *dst, const char *src);
 
-int	get_next_line(int fd, char **line);
+int     get_next_line(int fd, char **line);
 
 #endif
