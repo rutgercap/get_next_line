@@ -6,7 +6,7 @@
 /*   By: rcappend <rcappend@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/30 10:26:46 by rcappend      #+#    #+#                 */
-/*   Updated: 2020/11/30 11:32:38 by rcappend      ########   odam.nl         */
+/*   Updated: 2020/11/30 12:37:44 by rcappend      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,7 @@ int	ret_check(int ret, char **line)
 {
 	if (ret == -1)
 	{
-		if (*line)
-			free(*line);
+		free(*line);
 		return (ret);
 	}
 	return (ret);
@@ -36,6 +35,7 @@ int	ft_strjoin(char **line, char *buff)
 		return (-1);
 	index = ft_memccpy(new, *line, 0);
 	index = ft_memccpy(index, buff, '\n');
+	free(*line);
 	*line = new;
 	newl = ft_strchr(buff, '\n') == NULL ? 0 : 1;
 	ft_memmove(buff, index);
