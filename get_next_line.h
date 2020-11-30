@@ -6,7 +6,7 @@
 /*   By: rcappend <rcappend@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/30 10:39:19 by rcappend      #+#    #+#                 */
-/*   Updated: 2020/11/30 10:44:49 by rcappend      ########   odam.nl         */
+/*   Updated: 2020/11/30 11:42:38 by rcappend      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ char	*ft_memccpy(char *dst, const char *src, int c);
 
 void	ft_memmove(char *dst, const char *src);
 
-int     get_next_line(int fd, char **line);
+int		get_next_line(int fd, char **line);
 
 #endif
