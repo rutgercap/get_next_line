@@ -5,5 +5,7 @@ Bonus function adds the ability to read from multiple different files whilst kee
 
 Return values:
 -1: Function failed to return a line for whatever reason
-0: End of file has been reached\n
-1: Line has been returned\n
+
+0: End of file has been reached
+
+1: Line has been returned
