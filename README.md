@@ -26,8 +26,8 @@ int	get_next_line(int fd, char **line)
 /* prints out full file */
 int main(void)
 {
-	int		fd;
-    int     i = 1;
+	int	fd;
+    	int     i = 1;
 	char	*line = NULL;
 
 	fd = open("path_to_file", O_RDONLY);
